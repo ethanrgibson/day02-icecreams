@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Rhinestone Cowboy</title>
+</head>
+
+<body>
+  <header>
+    <div class="p-3 text-success bg-dark fs-1">
+      Eat Some Goods 🤘🤘🤘
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <div class="bg-light card my-3 p-2">
+            <div>
+              Cart 🛒
+            </div>
+            <ul id="qtyTotal">
+              <!-- QTY of each item -->
+            </ul>
+            <p>Total Items in Cart: <span id="quantity">0</p>
+            <p>
+              Total: $ <span id="cartList">0</span>
+            </p>
+            <div>
+              <button onclick="checkout()" class="btn btn-outline-primary">Ready to Checkout?</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card my-3">
+                <img
+                  src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWNlJTIwY3JlYW18ZW58MHx8MHx8fDI%3D"
+                  class="card-img-top cream-card" alt="Ice cream cone">
+                <div class="card-body">
+                  <p class="card-text fs-3">Ice Cream Cone</p>
+                  <p class="fw-bold">$150</p>
+                  <button onclick="addItemToCart(0)" class="btn btn-primary" type="Add To Cart">Add To
+                    Cart
+                    <span class="mdi mdi-go-kart"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card my-3">
+                <img
+                  src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aWNlJTIwY3JlYW0lMjBjaG9jb2xhdGV8ZW58MHx8MHx8fDI%3D"
+                  class="card-img-top cream-card" alt="Ice cream cone">
+                <div class="card-body">
+                  <p class="card-text fs-3">Chocolate</p>
+                  <p class="fw-bold">$110.25</p>
+                  <button onclick="addItemToCart(2)" class="btn btn-primary" type="Add To Cart">Add To
+                    Cart
+                    <span class="mdi mdi-go-kart"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card my-3">
+                <img
+                  src="https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFuaWxsYSUyMGljZSUyMGNyZWFtfGVufDB8fDB8fHwy"
+                  class="card-img-top cream-card" alt="Ice cream cone">
+                <div class="card-body">
+                  <p class="card-text fs-3">Vanilla</p>
+                  <p class="fw-bold">$100</p>
+                  <button onclick="addItemToCart(1)" class="btn btn-primary" type="Add To Cart">Add To
+                    Cart
+                    <span class="mdi mdi-go-kart"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <footer></footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
