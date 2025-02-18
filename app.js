@@ -18,6 +18,12 @@ const iceCreamOptions = [
     price: 110.25,
     quantity: 0,
   },
+
+  {
+    name: 'Rubber Bands',
+    price: 1,
+    quantity: 0,
+  }
 ]
 
 
